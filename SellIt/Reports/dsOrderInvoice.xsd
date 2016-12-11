@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsOrderInvoice" targetNamespace="http://tempuri.org/dsOrderInvoice.xsd" xmlns:mstns="http://tempuri.org/dsOrderInvoice.xsd" xmlns="http://tempuri.org/dsOrderInvoice.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="con" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="con (Settings)" PropertyReference="ApplicationSettings.SellIt.Properties.Settings.GlobalReference.Default.con" Provider="System.Data.OleDb">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblOrderInvTableAdapter" GeneratorDataComponentClassName="tblOrderInvTableAdapter" Name="tblOrderInv" UserDataComponentName="tblOrderInvTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="con (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     [Order Details].Product AS Code, Products.Name, Products.Description, Products.Price AS [Unit Price], [Order Details].Quantity, 
+                      [Order Details].Price AS Total
+FROM         ((Products INNER JOIN
+                      [Order Details] ON Products.ID = [Order Details].Product) INNER JOIN
+                      Orders ON [Order Details].[Order] = Orders.ID)</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Code" DataSetColumn="Code" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Unit Price" DataSetColumn="Unit Price" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="Total" DataSetColumn="Total" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsOrderInvoice" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsOrderInvoice" msprop:Generator_DataSetName="dsOrderInvoice">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblOrderInv" msprop:Generator_UserTableName="tblOrderInv" msprop:Generator_RowDeletedName="tblOrderInvRowDeleted" msprop:Generator_RowChangedName="tblOrderInvRowChanged" msprop:Generator_RowClassName="tblOrderInvRow" msprop:Generator_RowChangingName="tblOrderInvRowChanging" msprop:Generator_RowEvArgName="tblOrderInvRowChangeEvent" msprop:Generator_RowEvHandlerName="tblOrderInvRowChangeEventHandler" msprop:Generator_TableClassName="tblOrderInvDataTable" msprop:Generator_TableVarName="tabletblOrderInv" msprop:Generator_RowDeletingName="tblOrderInvRowDeleting" msprop:Generator_TablePropName="tblOrderInv">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unit_x0020_Price" msprop:Generator_UserColumnName="Unit Price" msprop:Generator_ColumnVarNameInTable="columnUnit_Price" msprop:Generator_ColumnPropNameInRow="Unit_Price" msprop:Generator_ColumnPropNameInTable="Unit_PriceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Quantity" msprop:Generator_UserColumnName="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

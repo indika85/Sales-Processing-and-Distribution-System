@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRptReorder" targetNamespace="http://tempuri.org/dsRptReorder.xsd" xmlns:mstns="http://tempuri.org/dsRptReorder.xsd" xmlns="http://tempuri.org/dsRptReorder.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="con" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="con (Settings)" PropertyReference="ApplicationSettings.SellIt.Properties.Settings.GlobalReference.Default.con" Provider="System.Data.OleDb">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ReportTableAdapter" GeneratorDataComponentClassName="ReportTableAdapter" Name="Report" UserDataComponentName="ReportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="con (Settings)" DbObjectName="Report Reorder" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT [Product ID], Name, Description, [Current Stock], ROL, Deviation FROM [Report Reorder]</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Product ID" DataSetColumn="Product ID" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Current Stock" DataSetColumn="Current Stock" />
+              <Mapping SourceColumn="ROL" DataSetColumn="ROL" />
+              <Mapping SourceColumn="Deviation" DataSetColumn="Deviation" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRptReorder" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsRptReorder" msprop:Generator_DataSetName="dsRptReorder">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Report" msprop:Generator_UserTableName="Report" msprop:Generator_RowDeletedName="ReportRowDeleted" msprop:Generator_RowChangedName="ReportRowChanged" msprop:Generator_RowClassName="ReportRow" msprop:Generator_RowChangingName="ReportRowChanging" msprop:Generator_RowEvArgName="ReportRowChangeEvent" msprop:Generator_RowEvHandlerName="ReportRowChangeEventHandler" msprop:Generator_TableClassName="ReportDataTable" msprop:Generator_TableVarName="tableReport" msprop:Generator_RowDeletingName="ReportRowDeleting" msprop:Generator_TablePropName="Report">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Product_x0020_ID" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Product ID" msprop:Generator_ColumnVarNameInTable="columnProduct_ID" msprop:Generator_ColumnPropNameInRow="Product_ID" msprop:Generator_ColumnPropNameInTable="Product_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Current_x0020_Stock" msprop:Generator_UserColumnName="Current Stock" msprop:Generator_ColumnVarNameInTable="columnCurrent_Stock" msprop:Generator_ColumnPropNameInRow="Current_Stock" msprop:Generator_ColumnPropNameInTable="Current_StockColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ROL" msprop:Generator_UserColumnName="ROL" msprop:Generator_ColumnVarNameInTable="columnROL" msprop:Generator_ColumnPropNameInRow="ROL" msprop:Generator_ColumnPropNameInTable="ROLColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Deviation" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Deviation" msprop:Generator_ColumnVarNameInTable="columnDeviation" msprop:Generator_ColumnPropNameInRow="Deviation" msprop:Generator_ColumnPropNameInTable="DeviationColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
