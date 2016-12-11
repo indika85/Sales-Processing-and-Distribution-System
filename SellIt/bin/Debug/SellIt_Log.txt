@@ -1,0 +1,113 @@
+SellIt Log File.   ---DO NOT MODIFY THE CONTENT OF THIS FILE!----
+==========================================================================
+System Date : 3/28/2009 8:31:22 PM
+System.IO.FileNotFoundException: Could not load file or assembly 'CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304' or one of its dependencies. The system cannot find the file specified.
+File name: 'CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304'
+   at SellIt.frmReportViewer.InitializeComponent()
+   at SellIt.frmReportViewer..ctor(String rptName, Int32 k) in H:\Projects\SellIt(R)Modified2xxx\SellIt\frmReportViewer.cs:line 36
+   at SellIt.frmTransaction.generateOrderInv(Int32 key) in H:\Projects\SellIt(R)Modified2xxx\SellIt\frmTransactions.cs:line 284
+   at SellIt.frmTransaction.btnDone_Click(Object sender, EventArgs e) in H:\Projects\SellIt(R)Modified2xxx\SellIt\frmTransactions.cs:line 262
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+==========================================================================
+System Date : 3/28/2009 8:33:26 PM
+System.Data.OleDb.OleDbException: The changes you requested to the table were not successful because they would create duplicate values in the index, primary key, or relationship.  Change the data in the field or fields that contain duplicate data, remove the index, or redefine the index to permit duplicate entries and try again.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   at SellIt.SalesReturn.btnOrAdd_Click(Object sender, EventArgs e) in H:\Projects\SellIt(R)Modified2xxx\SellIt\SalesReturn.cs:line 721
+==========================================================================
+System Date : 12/10/2016 4:17:09 PM
+System.InvalidOperationException: The 'Microsoft.Jet.OLEDB.4.0' provider is not registered on the local machine.
+   at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at SellIt.frmSplash.connectDB() in C:\Users\Indika\Desktop\TEMP\niratnayake.com\SellIt\SellIt\frmSplash.cs:line 95
+==========================================================================
+System Date : 12/10/2016 4:17:22 PM
+System.InvalidOperationException: The 'Microsoft.Jet.OLEDB.4.0' provider is not registered on the local machine.
+   at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at SellIt.frmLogIn.frmLogIn_Load(Object sender, EventArgs e) in C:\Users\Indika\Desktop\TEMP\niratnayake.com\SellIt\SellIt\frmLogIn.cs:line 26
+==========================================================================
+System Date : 12/10/2016 4:17:23 PM
+System.InvalidOperationException: ExecuteReader requires an open and available Connection. The connection's current state is closed.
+   at System.Data.OleDb.OleDbConnection.CheckStateOpen(String method)
+   at System.Data.OleDb.OleDbCommand.ValidateConnection(String method)
+   at System.Data.OleDb.OleDbCommand.ValidateConnectionAndTransaction(String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at SellIt.frmLogIn.frmLogIn_Shown(Object sender, EventArgs e) in C:\Users\Indika\Desktop\TEMP\niratnayake.com\SellIt\SellIt\frmLogIn.cs:line 136
+==========================================================================
+System Date : 12/10/2016 4:17:26 PM
+System.InvalidOperationException: ExecuteReader requires an open and available Connection. The connection's current state is closed.
+   at System.Data.OleDb.OleDbConnection.CheckStateOpen(String method)
+   at System.Data.OleDb.OleDbCommand.ValidateConnection(String method)
+   at System.Data.OleDb.OleDbCommand.ValidateConnectionAndTransaction(String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at SellIt.frmLogIn.btnLogIn_Click(Object sender, EventArgs e) in C:\Users\Indika\Desktop\TEMP\niratnayake.com\SellIt\SellIt\frmLogIn.cs:line 73
+==========================================================================
+System Date : 12/10/2016 4:17:30 PM
+System.InvalidOperationException: ExecuteReader requires an open and available Connection. The connection's current state is closed.
+   at System.Data.OleDb.OleDbConnection.CheckStateOpen(String method)
+   at System.Data.OleDb.OleDbCommand.ValidateConnection(String method)
+   at System.Data.OleDb.OleDbCommand.ValidateConnectionAndTransaction(String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at SellIt.frmLogIn.btnLogIn_Click(Object sender, EventArgs e) in C:\Users\Indika\Desktop\TEMP\niratnayake.com\SellIt\SellIt\frmLogIn.cs:line 73
+==========================================================================
+System Date : 12/10/2016 4:17:38 PM
+System.InvalidOperationException: ExecuteReader requires an open and available Connection. The connection's current state is closed.
+   at System.Data.OleDb.OleDbConnection.CheckStateOpen(String method)
+   at System.Data.OleDb.OleDbCommand.ValidateConnection(String method)
+   at System.Data.OleDb.OleDbCommand.ValidateConnectionAndTransaction(String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at SellIt.frmTransaction.Form1_Load(Object sender, EventArgs e) in C:\Users\Indika\Desktop\TEMP\niratnayake.com\SellIt\SellIt\frmTransactions.cs:line 54
+==========================================================================
+System Date : 12/10/2016 4:19:24 PM
+System.InvalidOperationException: The 'Microsoft.Jet.OLEDB.4.0' provider is not registered on the local machine.
+   at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at SellIt.frmSplash.connectDB() in C:\Users\Indika\Desktop\TEMP\niratnayake.com\SellIt\SellIt\frmSplash.cs:line 95
+==========================================================================
+System Date : 12/10/2016 4:19:59 PM
+System.InvalidOperationException: The 'Microsoft.Jet.OLEDB.4.0' provider is not registered on the local machine.
+   at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at SellIt.frmLogIn.frmLogIn_Load(Object sender, EventArgs e) in C:\Users\Indika\Desktop\TEMP\niratnayake.com\SellIt\SellIt\frmLogIn.cs:line 26
+==========================================================================
+System Date : 12/10/2016 4:20:01 PM
+System.InvalidOperationException: ExecuteReader requires an open and available Connection. The connection's current state is closed.
+   at System.Data.OleDb.OleDbConnection.CheckStateOpen(String method)
+   at System.Data.OleDb.OleDbCommand.ValidateConnection(String method)
+   at System.Data.OleDb.OleDbCommand.ValidateConnectionAndTransaction(String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at SellIt.frmLogIn.frmLogIn_Shown(Object sender, EventArgs e) in C:\Users\Indika\Desktop\TEMP\niratnayake.com\SellIt\SellIt\frmLogIn.cs:line 136
